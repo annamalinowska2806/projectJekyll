@@ -1,0 +1,31 @@
+<div id="bio_ep_bg"></div>
+<div id="bio_ep">
+  <div id="bio_ep_content">
+    <div class="bio_ep_inner background-image call-me-back">
+      <div class="modal-copy">
+        <div class="call-to-action">
+          <h3>Nie masz czasu?</h3>
+          <p>Zostaw numer, a my znajdziemy <br>dla Ciebie najlepszą ofertę!</p>
+        </div>
+        <div class="thank-you-message">
+          <h3>Gotowe!</h3>
+          <p>Dziękujemy za zamówienie rozmowy, nasz konsultant odezwie się w ciągu kilku minut.</p>
+          <a class="modal-button thank-you-anchor" href="{{ '/akademia' | prepend: site.mfind_url }}">
+            Więcej o ubezpieczeniach
+          </a>
+        </div>
+      </div>
+      <form class="form" id="exit-intend" data-request-url="{{ site.b2c_api_url }}"
+            data-auth-hash="{{ site.b2c_api_credentials | base64_encode }}">
+        <div class="form-input-wrapper">
+          <input id="phone" type="tel" class="input_form w-input" placeholder="Wprowadź numer..." minlength="9"
+                 maxlength="9" name="phone" data-name="Phone">
+        </div>
+        <button type="submit" class="modal-button">
+          ZAMÓW ROZMOWĘ <i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i>
+        </button>
+        {% include agreements-exit-intent.html %}
+      </form>
+    </div>
+  </div>
+</div>

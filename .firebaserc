@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "lp-komunikacja-staging",
+    "production": "lp-komunikacja"
+  },
+  "targets": {
+    "lp-komunikacja": {
+      "hosting": {
+        "production": [
+          "lp-komunikacja"
+        ]
+      }
+    },
+    "lp-komunikacja-staging": {
+      "hosting": {
+        "staging": [
+          "lp-komunikacja-staging"
+        ]
+      }
+    }
+  }
+}

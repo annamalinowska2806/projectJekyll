@@ -1,0 +1,72 @@
+version: 2.1
+executors:
+  default:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/ruby:2.6.1-node-browsers
+
+commands:
+  jekyll_build:
+    description: Jekyll build for given environment
+    parameters:
+      env:
+        type: string
+        default: staging
+    steps:
+      - run:
+          name: Build - << parameters.env >>
+          command: JEKYLL_ENV=<< parameters.env >> bundle exec jekyll build --config _config.yml,_config_<< parameters.env >>.yml
+  validate_html:
+    description: HTML validation using htmlproofer
+    parameters:
+      env:
+        type: string
+      domains:
+        type: string
+    steps:
+      - run:
+          name: HTML validation - << parameters.env >>
+          command: |
+            bundle exec htmlproofer ./_site/<< parameters.env >> \
+              --check-html \
+              --allow-hash-href \
+              --http-status-ignore 401 \
+              --internal-domains << parameters.domains >>
+
+jobs:
+  build:
+    executor: default
+    steps:
+      - checkout
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+      - restore_cache:
+          key: motor-lp-v1-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Bundle install
+          command: bundle install --path vendor/bundle
+      - save_cache:
+          key: motor-lp-v1-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - ~/.cache
+            - vendor/bundle
+      - jekyll_build:
+          env: staging
+      - validate_html:
+          env: staging
+          domains: 'https://staging.mfind.pl,https://staging.mfind.net.pl'
+      - jekyll_build:
+          env: production
+      - validate_html:
+          env: production
+          domains: 'https://mfind.pl,https://www.mfind.net.pl,https://mfind.net.pl,https://www.mfind.net.pl'
+
+workflows:
+  version: 2.1
+  build-html-validation:
+    jobs:
+      - build

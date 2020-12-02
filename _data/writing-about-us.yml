@@ -1,0 +1,89 @@
+- name: Bankier.pl
+  article_link: http://www.bankier.pl/wiadomosc/Mlodzi-kierowcy-najwiekszym-zagrozeniem-na-polskich-drogach-3402114.html
+  logo: /images/about/bankier-pl-logo.png
+  description: "Od ponad 10 lat najmłodsi kierowcy powodują w Polsce 17-18 proc. wypadków. Jak wynika z raportu porównywarki ubezpieczeń mfind.pl, sytuacja nie poprawia się, chociaż w tym okresie liczba osób w wieku 18-24 lata zmniejszyła się o ponad milion!"
+
+- name: Puls Biznesu
+  article_link: http://pulsbiznesu.pb.pl/4257646,44168,mci-uwierzylo-w-polisy
+  logo: /images/about/puls-biznesu-logo.png
+  description: "Fundusz wchodzi na rynek ubezpieczeniowy. Zainwestował 6 mln zł w porównywarkę ubezpieczeniową mFind."
+
+- name: Rzeczpospolita
+  article_link: http://www4.rp.pl/artykul/1174865-Warszawa-jak-zawsze-najdrozsza.html
+  logo: /images/about/rzeczpospolita-logo.png
+  description: "Zespół porównywarki mfind opublikował dziś na swych stronach najnowszy raport dotyczący cen OC w polskich miastach u poszczególnych ubezpieczycieli. Różnice porównywalnych ofert sięgają nawet 517 zł."
+
+- name: Money.pl
+  article_link: http://moto.money.pl/wiadomosci/aktualnosci/artykul/infolinie-ubezpieczycieli---nie-wszystkie-sa,162,0,1815202.html
+  logo: /images/about/money-pl-logo.png
+  description: "Serwis mfind.pl, pod patronatem Rzecznika Ubezpieczonych, postanowił przyjrzeć się temu, z czym styka się praktycznie każdy, kto chce wykupić ubezpieczenie lub zgłosić szkodę."
+
+- name: Wprost.pl
+  article_link: http://www.wprost.pl/ar/510689/Wypadki-drogowe-w-miastach-Lodz-najniebezpieczniejsza-Warszawa-najbardziej-zabojcza/
+  logo: /images/about/wprost-pl-logo.png
+  description: "Jak wynika z najnowszego raportu porównywarki ubezpieczeń mfind, w 2014 roku w Łodzi doszło do największej liczby wypadków. Kolizje kończyły się jednak najtragiczniej w stolicy Polski."
+
+- name: Gazeta.pl
+  article_link: http://pieniadze.gazeta.pl/pieniadz/56,136159,17315888,Gdzie_kupisz_najtansze_OC__Porownaj_oferty_ubezpieczenia.html
+  logo: /images/about/gazeta-pl-logo.png
+  description: "Z raportu mfind wynika, że za ubezpieczenie OC najwięcej płacą kierowcy w Warszawie (średnio 676 zł), Wrocławiu (675 zł) i Gdańsku (665 zł), gdzie na wysokość składki wpływa duża liczba samochodów, a co za tym idzie - również wypadków."
+
+- name: WP.pl
+  article_link: http://moto.wp.pl/gid,17641462,title,Wypadki-drogowe-w-polskich-miastach,galeriazdjecie.html
+  logo: /images/about/wirtualna-polska-logo.png
+  description: "Kierowcy jeżdżą coraz bezpieczniej. Mimo to nie we wszystkich miastach liczba wypadków i ofiar śmiertelnych spada. Przedstawiamy drugi raport mfind.pl o bezpieczeństwie ruchu drogowego w największych miastach Polski."
+
+- name: Gazeta Ubezpieczeniowa
+  article_link: http://www.gu.com.pl/index.php?option=com_content&amp;view=article&amp;id=57300:ruszy-serwis-mfindpl-&amp;catid=99:porednictwo&amp;Itemid=102
+  logo: /images/about/gazeta-ubezpieczeniowa-logo.png
+  description: "Po trwających rok przygotowaniach wystartowała porównywarka ubezpieczeń OC i AC mfind.pl. Jest to pierwszy taki serwis, który bez zgody klientów nie udostępnia ich danych towarzystwom ubezpieczeniowym. "
+
+- name: Antyweb
+  article_link: http://antyweb.pl/to-jednak-dochodowy-biznes-porownywarka-ubezpieczen-samochodowych-pozyskala-6-mln-zl-dofinansowania/
+  logo: /images/about/antyweb-logo.png
+  description: "Sierpień to również gorący okres na rynku porównywarek ubezpieczeń OC/AC. Na początku sierpnia Interia przejęła Rankomat.pl, a wczoraj otrzymaliśmy informację o inwestycji w inną polską porównywarkę mfind.pl."
+
+- name: Gazeta Prawna
+  article_link: http://serwisy.gazetaprawna.pl/finanse-osobiste/artykuly/843490,najlepsze-serwisy-internetowe-ubezpieczycieli.html
+  logo: /images/about/gazeta-prawna-logo.png
+  description: "Zespół mfind, we współpracy ze specjalistami od użyteczności oraz grafikami, ocenił serwisy internetowe 12 ubezpieczycieli direct. Sprawdź, gdzie najwygodniej kupisz polisę."
+
+- name: Forbes
+  article_link: http://auto.forbes.pl/gdzie-jest-najwiecej-wypadkow-w-polsce-,artykuly,196488,1,1.html
+  logo: /images/about/forbes-logo.png
+  description: "Firma mfind opublikowała raport na temat wypadków w polskich miastach w 2014 roku. Obejmuje on 18 miejscowości. Podobnie jak rok wcześniej, najmniej bezpiecznym miastem okazała się Łódź – jest tu najwięcej wypadków w ogóle, a także najwięcej spowodowanych przez nietrzeźwych kierowców."
+
+- name: Wyborcza.biz
+  article_link: http://wyborcza.biz/Gieldy/1,132329,19100447,mfind-pl-ponad-95-polakow-jest-zadowolonych-z-polisy-oc-ac.html
+  logo: /images/about/wyborcza-biz-logo.png
+  description: "Aż 95,5% Polaków kupujących polisy ubezpieczeniowe OC/AC przez internet jest zadowolonych z przeprowadzonej transakcji, wynika z badania porównywarki ubezpieczeń komunikacyjnych mfind.pl."
+
+- name: Polskie Radio
+  article_link: http://www.polskieradio.pl/42/4393/Artykul/1566960,Kierowcom-nie-oplaca-sie-brak-ubezpieczenia
+  logo: /images/about/polskie-radio-logo.png
+  description: "Kara za brak obowiązkowego ubezpieczenia OC jest obliczana na podstawie płacy minimalnej, a ta wraz z początkiem roku wzrosła o 100 złotych – wyjaśnia Bartosz Salwiński, prezes zarządu porównywarki ubezpieczeń mfind.pl."
+
+- name: Motofakty
+  article_link: http://www.motofakty.pl/artykul/mlodzi-kierowcy-zagrozeniem-na-drogach.html
+  logo: /images/about/motofakty-logo.png
+  description: "Od ponad 10 lat najmłodsi kierowcy powodują w Polsce 17-18%. wypadków. Jak wynika z raportu porównywarki ubezpieczeń mfind.pl, sytuacja nie poprawia się, chociaż w tym okresie liczba osób w wieku 18-24 lata zmniejszyła się o ponad milion!"
+
+- name: Onet
+  article_link: http://moto.onet.pl/aktualnosci/wieksze-kary-za-brak-waznego-oc/q0l3cj
+  logo: /images/about/onet-logo.png
+  description: "Rozmowa z Bartoszem Salwińskim - współzałożycielem porównywarki ubezpieczeń mfind.pl."
+
+- name: Rzecznik Finansowy
+  article_link: http://rf.gov.pl/akty-prawne/ubezpieczenia-gospodarcze/PZU_chce_przejmowac_banki___22039
+  logo: /images/about/rzecznik-finansowy-logo.jpg
+  description: "mfind radzi: nie dzwoń w poniedziałki, unikaj godzin porannych i telefonów przed pełną godziną."
+
+- name: Interia
+  article_link: http://biznes.interia.pl/finanse-osobiste/news/wyzsze-kary-wlascicieli-pojazdow-za-brak-oc-w-2016-roku,2208721
+  logo: /images/about/interia-logo.png
+  description: "Rozwiązanie to nie tylko monitoruje, ale skutecznie wyłapuje przypadki przerw w ubezpieczeniu pojazdu, co - miejmy nadzieję - wpłynie na kierowców mobilizująco - mówi Bartosz Salwiński, współzałożyciel i członek zarządu mfind.pl."
+
+- name: Super Express
+  article_link: http://www.se.pl/pieniadze/newsy/polacy-powoduja-kosztowne-kraksy-za-granica_640595.html
+  logo: /images/about/super-express-logo.png
+  description: "W minionym roku polscy kierowcy spowodowali aż 46 tys. szkód na zagranicznych drogach. To o ponad 2 tys. więcej niż rok wcześniej. Takie dane podaje raport specjalistów porównywarki ubezpieczeń mfind oraz Polskiego Biura Ubezpieczycieli Komunikacyjnych."

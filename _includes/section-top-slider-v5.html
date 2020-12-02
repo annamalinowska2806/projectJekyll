@@ -1,0 +1,55 @@
+<div id="section-top-slider-v5" class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <h1>
+        Zdarza Ci się zapomnieć o&nbsp;<span class="yellow-text">przeglądzie samochodu</span>?
+        <span>Nie szkodzi, zapisz się i włącz przypomnienia!</span>
+      </h1>
+      <div class="advantages-header">
+        Przypomnimy Ci:
+      </div>
+      <ul class="advantages">
+        <li>za pomocą SMS lub e-mail</li>
+        <li>całkowicie za darmo</li>
+        <li>bez zbędnych formalności</li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="contact-form-wrap">
+        <div class="txt_form">Włącz przypomnienia:</div>
+        <div class="w-form">
+          <form class="form" id="contactForm5" data-request-url="{{ site.b2c_api_url }}"
+                data-auth-hash="{{ site.b2c_api_credentials | base64_encode }}">
+            <input id="inputName" type="text" class="input_form w-input" minlength="3" maxlength="40" name="fullname"
+                   placeholder="Imię" autocomplete="name" required>
+            <select class="custom-select make-name" name="make_name"></select>
+            <input id="technical-exam-date" class="input_form w-input input-datepicker" type="text" name="technical_exam_date"
+                   placeholder="Data ważności badania technicznego" autocomplete="off" required>
+            <h5>Wybierz formę przypomnienia:</h5>
+            <div class="opt-group">
+              <label for="option-reminder-sms">Przypomnienie SMS</label>
+              <input id="option-reminder-sms" type="checkbox"
+                     checked="checked" name="SmsReminder"/>
+              <div class="checkbox-input">
+                <input id="inputPhone" type="tel" class="input_form w-input contact-group" minlength="9" maxlength="9"
+                       name="phone" placeholder="Numer telefonu" autocomplete="tel">
+              </div>
+            </div>
+            <div class="opt-group last">
+              <label for="option-reminder-email">Przypomnienie e-mail</label>
+              <input id="option-reminder-email" type="checkbox" name="EmailCheckbox"/>
+              <div class="checkbox-input">
+                <input id="inputEmail" type="email" class="input_form w-input contact-group" name="email"
+                       maxlength="256" placeholder="Email" autocomplete="email">
+              </div>
+            </div>
+            <input class="mpc_reminder" type="hidden" name="mpc" value="">
+            {% include agreements.html %}
+            <button id="ga-goal-7" type="submit" class="btn-yellow btn-submit">Włącz</button>
+          </form>
+        </div>
+        <div class="success"></div>
+      </div>
+    </div>
+  </div>
+</div>

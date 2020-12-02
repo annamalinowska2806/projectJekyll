@@ -1,0 +1,29 @@
+{
+  "hosting": [
+    {
+      "target": "production",
+      "public": "_site/production",
+      "predeploy": [
+        "JEKYLL_ENV=production",
+        "jekyll build --config _config.yml,_config_production.yml"
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*"
+      ]
+    },
+    {
+      "target": "staging",
+      "predeploy": [
+        "JEKYLL_ENV=staging",
+        "jekyll build --config _config.yml,_config_staging.yml"
+      ],
+      "public": "_site/staging",
+      "ignore": [
+        "firebase.json",
+        "feed.xml",
+        "**/.*"
+      ]
+    }
+  ]
+}

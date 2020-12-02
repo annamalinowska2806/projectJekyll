@@ -1,0 +1,48 @@
+<!-- END OF CONTENT -->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 text-left">
+        <div class="left-text"> &copy;{{ site.time | date: '%Y' }} mfind it sp. z o. o. </div>
+      </div>
+      <div class="col-sm-12 col-md-6 text-right">
+        <a class="go-top scroll-to" href="#top" title="Do góry"></a>
+        {% include social-media.html %}
+      </div>
+      <div class="clearfix"></div>
+      {% include footer-menu.html %}
+      <div class="col-sm-12 col-md-6 col-lg-3 desktop-only">
+        <h5 class="col-title">Kontakt</h5>
+        <p class="contact-location">{{ site.contact_address }}</p>
+        <p class="contact-phone">
+          <a href="tel:{{ site.contact_phone }}">{{ site.contact_phone_with_spaces }}</a>
+        </p>
+        <p class="contact-email">
+          <a href="mailto:{{ site.contact_email }}" title="{{ site.contact_email }}">{{ site.contact_email }}</a>
+        </p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-12 mobile-only text-center">
+          <h5 class="col-title">Kontakt</h5>
+        </div>
+        <div class="col-6 mobile-only">
+          <p class="contact-location">{{ site.contact_address }}</p>
+        </div>
+        <div class="col-6 mobile-only">
+          <p class="contact-phone">
+            <a href="tel:{{ site.contact_phone }}">{{ site.contact_phone_with_spaces }}</a>
+          </p>
+          <p class="contact-email">
+            <a href="mailto:{{ site.contact_email }}" title="{{ site.contact_email }}">{{ site.contact_email }}</a>
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <div class="last-line">
+            Designed with
+            <img alt="Heart" src="{{ site.aws_bucket }}/images/homepage/icons/hearth-footer-icon.png">
+            by tonik.pl
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

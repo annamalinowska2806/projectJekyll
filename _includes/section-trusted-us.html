@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center header-wrapper">
+      <h2>Piszą o nas</h2>
+    </div>
+  </div>
+  <div class="row pqv-wrapper">
+    {% for writer in site.data.writing-about-us %}
+    <div class="col-sm-12 col-md-4 col-lg-2">
+      <div class=" pqv-item">
+      <div class="pqv-trigger" data-article-link="{{ writer.article_link }}"
+           data-product-type="article" data-product-image="{{ writer.logo | prepend: site.aws_bucket }}">
+        <img class="pqv-image" alt="{{ writer.name }}" src="{{ writer.logo | prepend: site.aws_bucket }}">
+      </div>
+      <div class="pqv-product-title">{{ writer.name }}</div>
+      <div class="pqv-product-description">{{ writer.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

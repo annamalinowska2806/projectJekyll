@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+keywords: porównywarka oc, porównywarka ubezpieczeń
+title: Porównywarka OC/AC. Kalkulator 76 ofert. Nr 1 w Polsce => mfind.pl
+description: >
+  Kierowco! Oszczędź nawet 517 zł na OC i AC. Porównaj nawet 76 ofert w 4 min.
+  Gwarancja najniższej ceny w Polsce. Kup polisę do 50% taniej – online/szybko.
+robots: noindex,nofollow
+og_title: Porównywarka mfind™ | Najtańsze ubezpieczenie samochodu
+og_description: >
+  mfind to porównywarka ubezpieczeń OC i AC, która pokazuje nie tylko ceny,
+  ale również różnice między polisami.
+og_url: https://www.mfind.pl
+mfind_url: https://www.mfind.pl
+mfind_net_url: https://mfind.net.pl/
+b2c_api_url: https://api.mfind.pl/calculations/auto/create
+b2c_api_credentials: mfind_api:7D1SEd5L4wj6
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+destination: _site/production
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

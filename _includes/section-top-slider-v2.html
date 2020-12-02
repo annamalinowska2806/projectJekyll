@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      {% include hero-text.html %}
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="contact-form-wrap">
+        <div class="txt_form">Zostaw kontakt, <br> oddzwonimy z ofertą</div>
+        <div class="w-form">
+          <form class="form" id="contactForm2" data-request-url="{{ site.b2c_api_url }}"
+                data-auth-hash="{{ site.b2c_api_credentials | base64_encode }}">
+            <input id="inputName" type="text" class="input_form w-input bg-red" minlength="3" maxlength="120"
+                   name="fullname" placeholder="Imię i nazwisko" required autocomplete="name">
+            <input id="inputPhone" type="tel" class="input_form w-input contact-group" minlength="9" maxlength="9"
+                   name="phone" placeholder="Numer telefonu" autocomplete="tel">
+            <input id="inputEmail" class="input_form w-input contact-group" type="email" name="email" maxlength="256"
+                   placeholder="E-mail" autocomplete="email">
+            <input type="hidden" name="mpc" value="LP_lead_generation_2">
+            <div class="input-message">Proszę wybrać przynajmniej jedną z dwóch form kontaktu</div>
+            {% include agreements.html %}
+            <button id="ga-goal-7" type="submit" class="btn-yellow btn-submit">Zamów rozmowę</button>
+          </form>
+        </div>
+        <div class="success"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

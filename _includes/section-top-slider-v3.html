@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      {% include hero-text.html %}
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="contact-form-wrap">
+        <div class="txt_form">Zostaw kontakt, <br> oddzwonimy z ofertą</div>
+        <div class="w-form">
+          <form class="form" id="contactForm3" data-request-url="{{ site.b2c_api_url }}"
+                data-auth-hash="{{ site.b2c_api_credentials | base64_encode }}">
+            <input id="inputName" type="text" class="input_form w-input bg-red" minlength="3" maxlength="120"
+                   name="fullname" placeholder="Imię i nazwisko" required autocomplete="name">
+            <input id="inputPhone" type="tel" class="input_form w-input contact-group" minlength="9" maxlength="9"
+                   name="phone" placeholder="Numer telefonu" required autocomplete="tel">
+            <input id="nextCall" class="input_form w-input datetimepicker input-datetimepicker" type="text" name="next_call"
+                   placeholder="Wybierz datę i godzinę kontaktu" autocomplete="off">
+            <input type="hidden" name="mpc" value="LP_lead_generation_3">
+            {% include agreements.html %}
+            <button id="ga-goal-7" type="submit" class="btn-yellow btn-submit">Zamów rozmowę</button>
+          </form>
+        </div>
+        <div class="success"></div>
+      </div>
+    </div>
+  </div>
+</div>

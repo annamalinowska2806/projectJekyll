@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center header-wrapper">
+      <h2>FAQ <span class="mobile-hide">-</span> porównywarka OC i AC</h2>
+    </div>
+    <div class="col-sm-12">
+      {% if jekyll.environment == "production" %}
+        {% assign faq-content = site.data.production.faq-v1 %}
+      {% else %}
+        {% assign faq-content = site.data.staging.faq-v1 %}
+      {% endif %}
+      <div class="row">
+        {% for faq in faq-content %}
+          <div class="col-sm-12 col-md-6">
+            <article class="faq-article">
+              <h2 class="faq-article-title">
+                {{faq.title }}
+              </h2>
+              <div class="faq-article-content">
+                {{faq.content}}
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

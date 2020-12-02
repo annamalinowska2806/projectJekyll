@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'pl' }}">
+  {% include head.html %}
+  <body>
+    {% include tracking-body.html %}
+
+    {% include lp-header-v1.html %}
+
+    {{ content }}
+
+    {% include footer-v1.html %}
+    {% include exit-intend-modal.html %}
+    {% include scripts.html %}
+  </body>
+</html>

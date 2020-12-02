@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center header-wrapper">
+      <h2>Porównujemy ubezpieczenia</h2>
+      <div class="section-text-subtitle">
+        <a href="https://rpu.knf.gov.pl/" target="_blank" title="KNF">
+          Sprawdź nas w bazie agentów Komisji Nadzoru Finansowego »
+        </a>
+      </div>
+    </div>
+    {% if jekyll.environment == "production" %}
+      {% assign insurance-companies = site.data.production.insurance-companies %}
+    {% else %}
+      {% assign insurance-companies = site.data.staging.insurance-companies %}
+    {% endif %}
+    {% for insurer in insurance-companies %}
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="pqv-item">
+        <div class="pqv-trigger" data-article-link="{{ insurer.article_link | prepend: site.mfind_url }}"
+             data-product-image="{{ insurer.logo | prepend: site.aws_bucket }}">
+          <img class="pqv-image" alt="{{ insurer.name }}" src="{{ insurer.logo | prepend: site.aws_bucket }}">
+        </div>
+        <div class="pqv-product-title">{{ insurer.name }}</div>
+        <div class="pqv-product-description">{{ insurer.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

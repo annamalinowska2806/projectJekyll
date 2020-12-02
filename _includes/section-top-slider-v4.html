@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h1> Zapisz się na przypomnienia <br> <span class="yellow-text">o końcu ważności polisy OC/AC</span></h1>
+      <h2>
+        Otrzymuj przypomnienia o zbliżającym się terminie <span class="yellow-text"> końca Twojego ubezpieczenia </span>,
+        aby zdążyć kupić nową polisę na czas, w najlepszej cenie!
+      </h2>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="contact-form-wrap">
+        <div class="txt_form">Zapisz się teraz!</div>
+        <div class="w-form">
+          <form class="form" id="contactForm4" data-request-url="{{ site.b2c_api_url }}"
+                data-auth-hash="{{ site.b2c_api_credentials | base64_encode }}">
+            <input id="inputName" type="text" class="input_form w-input" minlength="3" maxlength="120" name="fullname"
+                   placeholder="Imię" autocomplete="name" required>
+            <div class="custom-select-wrap">
+              <select class="custom-select make-name" name="make_name">
+                  <option value="" disabled selected>Wybierz markę samochodu</option>
+              </select>
+            </div>
+            <input id="insuranceStartDate" class="input_form w-input input-datepicker" type="text" name="insurance_start_date"
+                   placeholder="Data końca ubezpieczenia" autocomplete="off" required>
+            <input class="mpc_reminder" type="hidden" name="mpc" value="">
+            <h5> Wybierz formę przypomnienia:</h5>
+            <div class="opt-group">
+              <label for="option-reminder-sms">Przypomnienie SMS</label>
+              <input id="option-reminder-sms" type="checkbox"
+                     checked="checked" name="SmsReminder"/>
+              <div class="checkbox-input">
+                <input id="inputPhone" type="tel" class="input_form w-input contact-group" minlength="9" maxlength="9"
+                       name="phone" placeholder="Numer telefonu" autocomplete="tel" >
+              </div>
+            </div>
+            <div class="opt-group last">
+              <label for="option-reminder-email">Przypomnienie e-mail </label>
+              <input id="option-reminder-email" type="checkbox"
+                     name="EmailCheckbox"/>
+              <div class="checkbox-input">
+                <input id="inputEmail" class="input_form w-input contact-group" type="email" name="email"
+                       maxlength="256" placeholder="E-mail" autocomplete="email">
+              </div>
+            </div>
+            <input class="mpc_reminder" type="hidden" name="mpc" value="">
+            {% include agreements.html %}
+            <button id="ga-goal-7" type="submit" class="btn-yellow btn-submit">Zapisuję się</button>
+          </form>
+        </div>
+        <div class="success"></div>
+      </div>
+    </div>
+  </div>
+</div>
